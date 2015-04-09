@@ -9,6 +9,7 @@ end
 case node['platform']
 when 'amazon'
   default['yum']['main']['distroverpkg'] = 'system-release'
+  default['yum']['main']['releasever'] = 'latest'
 when 'scientific'
   default['yum']['main']['distroverpkg'] = 'sl-release'
 else
@@ -94,3 +95,4 @@ default['yum']['main']['timeout'] = nil # /\d+/
 default['yum']['main']['tolerant'] = false
 default['yum']['main']['tsflags'] = nil # /.*/
 default['yum']['main']['username'] = nil #  /.*/
+default['yum']['main']['releasever'] = latest

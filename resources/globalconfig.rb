@@ -46,6 +46,7 @@ attribute :commands, :kind_of => String, :regex => /.*/, :default => nil
 attribute :debuglevel, :kind_of => String, :regex => /^\d+$/, :default => '2'
 attribute :diskspacecheck, :kind_of => [TrueClass, FalseClass], :default => nil
 attribute :distroverpkg, :kind_of => String, :regex => /.*/, :default => nil
+attribute :releasever, :kind_of => String, :regex => /.*/, :default => nil
 attribute :enable_group_conditionals, :kind_of => [TrueClass, FalseClass], :default => nil
 attribute :errorlevel, :kind_of => String, :regex => /^\d+$/, :default => nil
 attribute :exactarch, :kind_of => [TrueClass, FalseClass], :default => true
